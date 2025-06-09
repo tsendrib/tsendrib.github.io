@@ -8,13 +8,15 @@
     <script type="module" src="/src/js/main.js"></script>
     <title>Greensky Intelligence</title>
   </head>
-  <body class="flex flex-col max-w-[900px] min-h-screen mx-auto bg-theme-white">
+  <body
+    class="flex flex-col max-w-[960px] min-h-screen mx-auto bg-theme-light-4"
+  >
     <header
       class="flex flex-row w-full bg-[url(/src/img/header.png)] bg-cover aspect-2/1"
     >
       <div class="">
         <div
-          class="bg-theme-light-4 w-fit h-fit px-12 py-3 mt-3 ml-3 sm:mt-16 sm:ml-36"
+          class="bg-theme-light-4 w-fit h-fit px-12 py-3 mt-3 ml-3 sm:mt-22 sm:ml-40"
         >
           <h1 class="text-4xl text-theme-light-1 font-display font-thin">
             greensky<br />intelligence
@@ -22,17 +24,95 @@
         </div>
       </div>
       <div class="flex flex-grow justify-end">
-        <img
-          src="/src/img/logo.png"
-          alt="Greensky Intelligence Logo"
-          class="w-12 h-12 sm:w-16 sm:h-16 m-3"
-        />
+        <a href="/">
+          <img
+            src="/src/img/logo.png"
+            alt="Greensky Intelligence Logo"
+            class="w-12 h-12 sm:w-16 sm:h-16 m-3"
+          />
+        </a>
       </div>
     </header>
     <main class="bg-theme-light-4">
-      <section>
-        <div class="w-full h-12 bg-green-500">fsad</div>
+      <div class="w-full h-2 flex flex-row my-10">
+        <div class="w-1/7 h-full bg-theme-dark-4"></div>
+        <div class="w-1/7 h-full bg-theme-dark-3"></div>
+        <div class="w-1/7 h-full bg-theme-dark-2"></div>
+        <div class="w-1/7 h-full bg-theme-dark-1"></div>
+        <div class="w-1/7 h-full bg-theme-light-1"></div>
+        <div class="w-1/7 h-full bg-theme-light-2"></div>
+        <div class="w-1/7 h-full bg-theme-light-3"></div>
+      </div>
+      <section class="relative w-full aspect-video">
+        <video
+          class="absolute inset-0"
+          poster="/src/img/elephant_intersection.jpg"
+          autoplay
+          loop
+          muted
+        >
+          <source src="/src/video/elephant_intersection.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute inset-0 flex flex-row text-theme-light-4">
+          <div class="flex-1/2 text-5xl font-display font-light py-20 px-10">
+            <h1>AI-Powered Media Intelligence</h1>
+          </div>
+          <div class="flex-1/2 py-20 px-10 text-2xl font-sans font-extralight">
+            <p class="mb-10">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
       </section>
+      <div class="w-full h-2 flex flex-row my-10">
+        <div class="w-1/7 h-full bg-theme-dark-4"></div>
+        <div class="w-1/7 h-full bg-theme-dark-3"></div>
+        <div class="w-1/7 h-full bg-theme-dark-2"></div>
+        <div class="w-1/7 h-full bg-theme-dark-1"></div>
+        <div class="w-1/7 h-full bg-theme-light-1"></div>
+        <div class="w-1/7 h-full bg-theme-light-2"></div>
+        <div class="w-1/7 h-full bg-theme-light-3"></div>
+      </div>
+      <section class="relative w-full aspect-video">
+        <video
+          class="absolute inset-0"
+          poster="/src/img/highway_intersection.jpg"
+          autoplay
+          loop
+          muted
+        >
+          <source src="/src/video/highway_intersection.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute inset-0 flex flex-row text-theme-light-4">
+          <div class="flex-1/2 py-20 px-10 text-2xl font-sans font-extralight">
+            <p class="mb-10">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="flex-1/2 text-5xl font-display font-light py-20 px-10">
+            <h1>Data-Driven Communication Strategy</h1>
+          </div>
+        </div>
+      </section>
+      <div class="w-full h-2 flex flex-row my-10">
+        <div class="w-1/7 h-full bg-theme-dark-4"></div>
+        <div class="w-1/7 h-full bg-theme-dark-3"></div>
+        <div class="w-1/7 h-full bg-theme-dark-2"></div>
+        <div class="w-1/7 h-full bg-theme-dark-1"></div>
+        <div class="w-1/7 h-full bg-theme-light-1"></div>
+        <div class="w-1/7 h-full bg-theme-light-2"></div>
+        <div class="w-1/7 h-full bg-theme-light-3"></div>
+      </div>
     </main>
     <footer class="bg-theme-dark-2 text-theme-light-4">
       <p>&copy; 2025 Greensky Intelligence. All rights reserved.</p>
