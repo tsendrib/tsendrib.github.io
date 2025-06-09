@@ -78,10 +78,37 @@ const initTypingEffect = () => {
   setTypingEffectObserver(["#type-in-1-0", "#type-in-1-1", "#type-in-1-2"]);
 };
 
+/** * Initializes the fade-in effect for elements with the class "fade-in".
+ * This function sets up an IntersectionObserver to add a class that triggers
+ * a CSS animation when the element is in view.
+ */
+const initFadeInEffect = () => {
+  const fadeInElements = document.querySelectorAll(".fade-in");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("fade-in-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1,
+    }
+  );
+  fadeInElements.forEach((element) => {
+    observer.observe(element);
+  });
+};
+
 /*
  * Initializes the script by setting up the typing effect when the DOM is fully loaded.
  */
 const init = () => {
+  initFadeInEffect();
   initTypingEffect();
 };
 
