@@ -26,6 +26,15 @@ const elementsAndTextContent = (ids) => {
 };
 
 /**
+ * Waits for a specified number of milliseconds.
+ * @param {number} ms - The number of milliseconds to wait.
+ * @returns {Promise<void>} - A promise that resolves after the specified time.
+ */
+const wait = (ms) => {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+};
+
+/**
  * Sets up an IntersectionObserver to apply a typing effect to elements with the specified IDs.
  * The typing effect will start when the first element becomes visible in the viewport.
  * @param {string[]} ids - An array of element IDs to apply the typing effect to.
@@ -53,10 +62,11 @@ const setTypingEffectObserver = (ids) => {
     async ([entry]) => {
       if (entry && entry.isIntersecting) {
         observer.disconnect();
-        let speed = 50;
+        let speed = 100;
+        await wait(1500);
         for (const { element, text } of elements) {
           await typeElement(element, text, speed);
-          speed = 5;
+          speed = 10;
         }
       }
     },

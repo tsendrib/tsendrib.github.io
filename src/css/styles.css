@@ -17,7 +17,7 @@
 }
 
 .fade-in {
-  @apply transition-opacity duration-500 ease-in opacity-0 invisible;
+  @apply transition-opacity duration-700 ease-in opacity-0 invisible;
   will-change: opacity, visibility;
 }
 
