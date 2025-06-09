@@ -86,6 +86,7 @@ const setTypingEffectObserver = (ids) => {
 const initTypingEffect = () => {
   setTypingEffectObserver(["#type-in-0-0", "#type-in-0-1", "#type-in-0-2"]);
   setTypingEffectObserver(["#type-in-1-0", "#type-in-1-1", "#type-in-1-2"]);
+  setTypingEffectObserver(["#type-in-2-0", "#type-in-2-1"]);
 };
 
 /** * Initializes the fade-in effect for elements with the class "fade-in".
