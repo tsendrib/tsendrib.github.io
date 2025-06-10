@@ -24,3 +24,35 @@
 .fade-in.fade-in-visible {
   @apply opacity-100 visible;
 }
+
+.card {
+  @apply relative bg-theme-dark-1 w-[450px] h-[150px] overflow-hidden;
+}
+
+.card:nth-child(1),
+.card:nth-child(4) {
+  @apply bg-theme-dark-2;
+}
+
+.card:before {
+  @apply absolute w-[80px] h-[80px] -top-[40px] -right-[40px] bg-theme-light-4;
+  transform: rotate(45deg);
+  content: "";
+}
+
+.card:after {
+  @apply absolute w-[150px] h-[8px] bottom-[20px] right-[20px] bg-theme-light-2;
+  content: "";
+}
+
+.card > p {
+  @apply invisible opacity-0 cursor-default;
+}
+
+.card:hover > h1 {
+  @apply invisible;
+}
+
+.card:hover > p {
+  @apply transition-all duration-400 visible -translate-y-[40px] opacity-100;
+}

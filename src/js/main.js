@@ -62,11 +62,11 @@ const setTypingEffectObserver = (ids) => {
     async ([entry]) => {
       if (entry && entry.isIntersecting) {
         observer.disconnect();
-        let speed = 100;
-        await wait(1500);
+        let speed = 50;
+        await wait(1000);
         for (const { element, text } of elements) {
           await typeElement(element, text, speed);
-          speed = 10;
+          speed = 5;
         }
       }
     },
@@ -86,7 +86,6 @@ const setTypingEffectObserver = (ids) => {
 const initTypingEffect = () => {
   setTypingEffectObserver(["#type-in-0-0", "#type-in-0-1", "#type-in-0-2"]);
   setTypingEffectObserver(["#type-in-1-0", "#type-in-1-1", "#type-in-1-2"]);
-  setTypingEffectObserver(["#type-in-2-0", "#type-in-2-1"]);
 };
 
 /** * Initializes the fade-in effect for elements with the class "fade-in".
