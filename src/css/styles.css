@@ -26,12 +26,16 @@
   will-change: opacity, visibility;
 }
 
+/* .fade-in.not-visible {
+  @apply opacity-0 invisible;
+} */
+
 .fade-in.fade-in-visible {
   @apply opacity-100 visible;
 }
 
 .card {
-  @apply relative w-[450px] h-[150px] overflow-hidden bg-gradient-to-br from-theme-dark-1 to-theme-light-1;
+  @apply relative w-full h-[150px] overflow-hidden bg-gradient-to-br from-theme-dark-1 to-theme-light-1;
 }
 
 .card:nth-child(1),
