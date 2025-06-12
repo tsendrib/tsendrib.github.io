@@ -119,7 +119,7 @@ const initFadeInEffect = () => {
  */
 const init = () => {
   initFadeInEffect();
-  // initTypingEffect();
+  initTypingEffect();
 };
 
 document.addEventListener("DOMContentLoaded", () => {
