@@ -29,8 +29,8 @@
   --color-theme-dark-4: #021e20;
   --color-theme-dark-3: #032c2f;
   --color-theme-dark-2: #065a60;
-  --color-theme-dark-1: #098891;
-  --color-theme-light-1: #0aa0aa;
+  --color-theme-dark: #098891;
+  --color-theme-light: #0aa0aa;
   --color-theme-light-2: #0dceda;
   --color-theme-light-3: #83e6ec;
   --color-theme-light-4: #fafafa;
@@ -43,12 +43,36 @@
   --font-accent: "Osaka Thai", sans-serif;
 
   --breakpoint-*: initial;
-  --breakpoint-tablet: 30rem;
-  --breakpoint-desktop: 48rem; /* TODO: */
+  --breakpoint-medium: 38rem;
+  --breakpoint-large: 48rem;
 }
 
-* {
+/* * {
   border: 0.1px solid red;
+} */
+
+.main-container {
+  @apply w-full max-w-[58rem] mx-auto;
+}
+
+.ear-l {
+  @apply h-full w-0 large:min-w-[9rem] large:max-w-[9rem] medium:min-w-[4rem] medium:max-w-[4rem] medium:border-r;
+}
+
+.ear-r {
+  @apply h-full w-0 large:min-w-[9rem] large:max-w-[9rem] medium:min-w-[4rem] medium:max-w-[4rem] medium:border-l;
+}
+
+.chan-1 {
+  @apply h-full min-w-[1rem] max-w-[1rem] border-r;
+}
+
+.chan-2 {
+  @apply h-full min-w-[1rem] max-w-[1rem] border-r;
+}
+
+.chan-main-c2 {
+  @apply h-full w-full;
 }
 
 .heading-1 {
@@ -61,6 +85,10 @@
 
 .heading-accent {
   @apply font-accent text-[2rem];
+}
+
+.text-logo {
+  @apply font-logo text-[2rem]/[2.25rem] tracking-wider;
 }
 
 .vertical {
