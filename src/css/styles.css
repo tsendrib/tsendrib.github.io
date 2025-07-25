@@ -55,6 +55,14 @@
   @apply w-full max-w-[58rem] mx-auto;
 }
 
+.bar-b {
+  @apply border-b border-theme-light;
+}
+
+.bar-l {
+  @apply border-l border-theme-light;
+}
+
 .ear-l {
   @apply h-full w-0 large:min-w-[9rem] large:max-w-[9rem] medium:min-w-[4rem] medium:max-w-[4rem] medium:border-r;
 }
@@ -68,6 +76,10 @@
 }
 
 .chan-2 {
+  @apply h-full min-w-[1rem] max-w-[1rem] border-r;
+}
+
+.chan-3 {
   @apply h-full min-w-[1rem] max-w-[1rem] border-r;
 }
 
@@ -87,10 +99,30 @@
   @apply font-accent text-[2rem];
 }
 
+.text-heading-1 {
+  @apply font-heading text-[2rem]/[1.2];
+}
+
+.text-large {
+  @apply font-body text-[1.125rem]/[1.4];
+}
+
+.text-medium {
+  @apply font-body;
+}
+
 .text-logo {
-  @apply font-logo text-[2rem]/[2.25rem] tracking-wider;
+  @apply font-logo text-[2rem]/[1.2] tracking-wider;
 }
 
 .vertical {
   writing-mode: sideways-lr;
+}
+
+.ai-office-right {
+  @apply bg-[url(https://placehold.co/600x144)] bg-cover bg-top-left bg-no-repeat;
+}
+
+.ai-office-left {
+  @apply bg-[url(https://placehold.co/600x144)] bg-cover bg-top-right bg-no-repeat;
 }
