@@ -87,20 +87,24 @@
   @apply h-full w-full;
 }
 
-.heading-1 {
-  @apply font-heading text-[2rem];
-}
-
-.heading-2 {
-  @apply font-heading text-[1.5rem];
-}
-
-.heading-accent {
-  @apply font-accent text-[2rem];
+.chan-main-c3 {
+  @apply h-full w-full;
 }
 
 .text-heading-1 {
   @apply font-heading text-[2rem]/[1.2];
+}
+
+.text-heading-2 {
+  @apply font-heading text-[1.5rem]/[1.2];
+}
+
+.text-heading-3 {
+  @apply font-heading text-[1rem]/[1.2];
+}
+
+.text-heading-accent-2 {
+  @apply font-accent text-[2rem]/[1.2];
 }
 
 .text-large {
@@ -108,15 +112,15 @@
 }
 
 .text-medium {
-  @apply font-body;
+  @apply font-body text-[1rem]/[1.4];
 }
 
 .text-logo {
   @apply font-logo text-[2rem]/[1.2] tracking-wider;
 }
 
-.vertical {
-  writing-mode: sideways-lr;
+.text-info {
+  @apply font-logo text-[1rem]/[1.2];
 }
 
 .ai-office-right {
@@ -125,4 +129,12 @@
 
 .ai-office-left {
   @apply bg-[url(https://placehold.co/600x144)] bg-cover bg-top-right bg-no-repeat;
+}
+
+.ai-office-full {
+  @apply bg-[url(https://placehold.co/600x144)] bg-cover bg-top-left bg-no-repeat;
+}
+
+.vertical {
+  writing-mode: sideways-lr;
 }
