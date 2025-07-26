@@ -124,15 +124,15 @@
 }
 
 .ai-office-right {
-  @apply bg-[url(https://placehold.co/600x144)] bg-cover bg-top-left bg-no-repeat;
+  @apply bg-[url(/src/img/ai-office.jpg)] bg-cover bg-left bg-no-repeat;
 }
 
 .ai-office-left {
-  @apply bg-[url(https://placehold.co/600x144)] bg-cover bg-top-right bg-no-repeat;
+  @apply bg-[url(/src/img/ai-office.jpg)] bg-cover bg-right bg-no-repeat;
 }
 
 .ai-office-full {
-  @apply bg-[url(https://placehold.co/600x144)] bg-cover bg-top-left bg-no-repeat;
+  @apply bg-[url(/src/img/ai-office.jpg)] bg-cover bg-top bg-no-repeat;
 }
 
 .vertical {
